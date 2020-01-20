@@ -5,15 +5,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The entry point for this application is a splash landing page that will provide basic content and collateral and allow the visitor to take 2 actions: `Create Profile` & `Login`
 
-## There will be 2 types of profiles: `Personal` & `Enterprise`
-  ### Both profile types will allow the user to enter basic informatio(name, address, email).
+### There will be 2 types of profiles: `Personal` & `Enterprise`
+  Both profile types will allow the user to enter basic informatio(name, address, email).
   
-  ### The Enterprise profile type upon logging in will see a `Create Offsite Event` application that allows the user to pick a date,        start & end time, company name & location and preferred contact. 
+  The Enterprise profile type upon logging in will see a `Create Offsite Event` application that allows the user to pick a date,        start & end time, company name & location and preferred contact. 
   
-## 3 pages: 
-### Splash/Landing
-### Create Profile
-### Profile Page
+### 3 pages: 
+#### Splash/Landing
+#### Create Profile
+#### Profile Page
 
 ## Database Design & Testing
 ![Image of Database](https://github.com/jstafford74/OffSiteMedical/blob/master/OffsiteMed%20Table%20Design.png)
