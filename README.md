@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Application WorkFlow
+## Application WorkFlow (https://github.com/jstafford74/OffSiteMedical/blob/master/OffsiteMed%20DB%20design.png)
 
 The entry point for this application is a splash landing page that will provide basic content and collateral and allow the visitor to take 2 actions: `Create Profile` & `Login`
 
