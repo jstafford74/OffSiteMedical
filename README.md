@@ -15,7 +15,7 @@ The entry point for this application is a splash landing page that will provide 
 ### Profile Page
 
 ## Database Design & Testing
-![Image of Database](OffsiteMed Table Design.png)
+![Image of Database](https://github.com/jstafford74/OffSiteMedical/blob/master/OffsiteMed%20Table%20Design.png)
 
 To facilitate calendar creation, profile rendering and offsite scheduling the basic design.
 Using `faker(https://www.npmjs.com/package/faker)`, `sequelize(https://sequelize.org/v5/)`, `sequelize-auto(https://www.npmjs.com/package/sequelize-auto)` &  `mysql2(https://www.npmjs.com/package/mysql2)`
