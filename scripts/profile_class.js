@@ -1,7 +1,7 @@
 const faker = require("faker");
 
 class Profile {
-    constructor(idProfile,
+    constructor(
         first_Name,
         last_Name,
         email,
@@ -16,7 +16,7 @@ class Profile {
         cell_phone,
         username,
         password) {
-        this.idProfile = idProfile;
+
         this.first_Name = first_Name;
         this.last_Name = last_Name;
         this.email = email;
@@ -35,8 +35,7 @@ class Profile {
 
     getProfileData() {
         return `
-        idProfile: ${this.idProfile}
-        first_Name: ${this.first_Name}
+       first_Name: ${this.first_Name}
         last_Name:${this.last_Name}
         email: ${this.email}
         personal:${this.personal}
@@ -54,19 +53,19 @@ class Profile {
     }
 
     makeProfileData() {
-        this.idProfile = faker.random.number(100);
+
         this.first_Name = faker.name.firstName();
         this.last_Name = faker.name.lastName();
-        this.email = faker.internet.email;
+        this.email = faker.internet.email();
         this.personal = 0;
         this.enterprise = 1;
         this.company = faker.company.companyName();
         this.street_address = faker.address.streetAddress();
         this.city = faker.address.city()
         this.state = faker.address.stateAbbr();
-        this.zip = faker.address.zipCode;
-        this.work_phone = faker.phone.phoneNumber();
-        this.cell_phone = faker.phone.phoneNumber();
+        this.zip = faker.address.zipCode("#####");
+        this.work_phone = faker.phone.phoneNumber("(203)-###-####");
+        this.cell_phone = faker.phone.phoneNumber("(203)-###-####");
         this.username = faker.internet.userName();
         this.password = faker.internet.password();
     };

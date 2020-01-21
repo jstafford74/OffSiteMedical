@@ -8,9 +8,15 @@ async function profiles() {
     proArr[i] = new Profile();
     proArr[i].makeProfileData();
   }
-  await db.sequelize.sync({ force: true });
-      db.Profile.bulkCreate(proArr);
-  // return patArr;
+  
+  try {
+    await db.sequelize.sync({ force: true });
+    const profiler =  db.Profile.bulkCreate(proArr);
+    console.log("success", profiler.toJSON());
+  } catch (err) {
+    console.log(err, proArr)
+    // return patArr;
 
+  }
 }
 profiles();

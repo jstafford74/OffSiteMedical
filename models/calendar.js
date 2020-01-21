@@ -2,12 +2,7 @@
 
 module.exports = function (sequelize, DataTypes) {
   var Calendar = sequelize.define('Calendar', {
-    'idCalendar': {
-      type: DataTypes.INTEGER(11),
-      allowNull: false,
-      primaryKey: true,
-      comment: "null"
-    },
+    
     'Date': {
       type: DataTypes.DATEONLY,
       allowNull: true,

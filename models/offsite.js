@@ -2,16 +2,7 @@
 
 module.exports = function (sequelize, DataTypes) {
   var Offsite = sequelize.define('Offsite', {
-    'idOffsite': {
-      type: DataTypes.INTEGER(11),
-      allowNull: false,
-      primaryKey: true,
-      comment: "null",
-      references: {
-        model: 'profile',
-        key: 'idProfile'
-      }
-    },
+    
     'location': {
       type: DataTypes.STRING(255),
       allowNull: true,
@@ -108,7 +99,7 @@ module.exports = function (sequelize, DataTypes) {
       comment: "null"
     }
   }, {
-    tableName: 'offsite table_n'
+    tableName: 'offsite_n'
   });
 
   return Offsite;
