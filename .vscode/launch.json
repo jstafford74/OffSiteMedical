@@ -21,6 +21,15 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}\\scripts\\seedProfiles.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Mock Profile",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\mock\\profile.js"
         }
     ]
 }
