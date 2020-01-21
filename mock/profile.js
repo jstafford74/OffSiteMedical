@@ -1,19 +1,31 @@
 require('dotenv').config();
 var db = require('../models');
-// const Profile = require('../models/Profile')
+const Op = db.Sequelize.Op
 
+testOne();
+testTwo();
 
 async function testOne() {
     try {
-        // await db.sequelize.sync({ force: false });
-        const data = await db.Profile.findAll({});
-        data.forEach((it) =>
-            console.log(it.first_Name));
+        const data = await db.Profile.findAll();
+        data.forEach((item) => {
+            console.log(item.first_Name);
+        })
+    } catch (err) { console.log(err, message) }
 
-
-    } catch (error) {
-        console.log(error, data);
-    }
 }
 
-testOne();
+
+async function testTwo() {
+    try {
+        const data2 = await db.Profile.findAll({
+            where: {
+                username: 'Ora.Witting'
+            }
+        })
+
+        console.group(data2);
+
+    } catch (err) { console.log(err) }
+}
+

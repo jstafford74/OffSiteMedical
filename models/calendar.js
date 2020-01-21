@@ -3,7 +3,7 @@
 module.exports = function (sequelize, DataTypes) {
   var Calendar = sequelize.define('Calendar', {
     
-    'Date': {
+    'date': {
       type: DataTypes.DATEONLY,
       allowNull: true,
       comment: "null"
@@ -43,27 +43,27 @@ module.exports = function (sequelize, DataTypes) {
       allowNull: true,
       comment: "null"
     },
-    'City': {
+    'city': {
       type: DataTypes.STRING(255),
       allowNull: true,
       comment: "null"
     },
-    'State': {
+    'state': {
       type: DataTypes.STRING(255),
       allowNull: true,
       comment: "null"
     },
-    'Zip': {
+    'zip': {
       type: DataTypes.INTEGER(10),
       allowNull: true,
       comment: "null"
     },
-    'Start Time': {
+    'start_time': {
       type: DataTypes.TIME,
       allowNull: true,
       comment: "null"
     },
-    'End Time': {
+    'end_time': {
       type: DataTypes.TIME,
       allowNull: true,
       comment: "null"
