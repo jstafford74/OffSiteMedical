@@ -1,9 +1,7 @@
-ReactTyped {
-    color: "white";
-}
+
 
 .typed-cursor {
-    opacity: 0;
+    opacity: 1;
     display: inline;
     color: orange;
     -webkit-animation: blink .3s infinite;

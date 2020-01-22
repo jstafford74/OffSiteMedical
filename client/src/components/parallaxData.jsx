@@ -11,7 +11,7 @@ const parallaxData = [
         easing: "easeInQuad",
         properties: [
             {
-                startValue: 100,
+                startValue: 1,
                 endValue: 0,
                 property: "opacityFilter",
                 unit: "vw"
