@@ -71,4 +71,12 @@ To facilitate calendar creation, profile rendering and offsite scheduling the ba
 Using `faker(https://www.npmjs.com/package/faker)`, `sequelize(https://sequelize.org/v5/)`, `sequelize-auto(https://www.npmjs.com/package/sequelize-auto)` &  `mysql2(https://www.npmjs.com/package/mysql2)`
 
 ### Route Checks & Testing
+postman testing:
 xmysql -u root -p 'my_password' -d offsitemedical
+
+In the api/index.js file I am using "/api" as the base url that requires routes/api/index.js.
+routes/api/index.js uses "api/auth" route for login & refresh, "api/signup" for signup and "api/protected" for rendering the user's profile once logged in. 
+
+
+
+Routes Are classified into two categories, protected or not.  Unprotected routes include "/" and "/signup".
