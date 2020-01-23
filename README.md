@@ -80,3 +80,25 @@ routes/api/index.js uses "api/auth" route for login & refresh, "api/signup" for 
 
 
 Routes Are classified into two categories, protected or not.  Unprotected routes include "/" and "/signup".
+
+### Passport.JS 
+Passport JS
+Designed to serve a singular purpose: Authenticate request. Passport delegates all other functionality to the application, which keeps code clean and maintainable, and makes Passport extremely easy to integrate into an application.
+Authentication mechanisms, known as strategies, are packaged as individual modules. Applications can choose which strategies to employ, without creating unnecessary dependencies. Authenticating requests are made via `passport.authenticate()` and specifying which strategy to employ. A redirect is commonly issued after authenticating a request.Redirects are often combined with flash messages in order to display status information to the user.After successful authentication, Passport will establish a persistent login session. This is useful for the common scenario of users accessing a web application via a browser. However, in some cases, session support is not necessary. For example, API servers typically require credentials to be supplied with each request. When this is the case, session support can be safely disabled by setting the session option to false.
+Three pieces need to be configured to use Passport for authentication:
+    Authentication strategies
+    Application middleware
+    Sessions (optional)
+
+Strategies require what is known as a `verify callback`. The purpose of a verify callback is to find the user that possesses a set of credentials.
+
+When Passport authenticates a request, it parses the credentials contained in the request, then invokes the `verify callback` with those credentials as arguments, e.g. case username and password. If the credentials are valid, the verify callback invokes done to supply Passport with the user that authenticated.
+
+In a Connect or Express-based application, passport.initialize() middleware is required to initialize Passport, and if the application uses persistent login sessions, passport.session() middleware must also be used.  Note that enabling session support is entirely optional, though it is recommended for most applications. If enabled, be sure to use session() before passport.session() to ensure that the login session is restored in the correct order.
+
+Sessions
+In a typical web application, the credentials used to authenticate a user will only be transmitted during the login request. If authentication succeeds, a session will be established and maintained via a cookie set in the user's browser.
+
+Each subsequent request will not contain credentials, but rather the unique cookie that identifies the session. In order to support login sessions, Passport will serialize and deserialize user instances to and from the session.
+The most widely used way for websites to authenticate users is via a username and password. Support for this mechanism is provided by the passport-local module.
+
