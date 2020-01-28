@@ -3,10 +3,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Application WorkFlow 
 (https://github.com/jstafford74/OffSiteMedical/blob/master/OffsiteMed%20DB%20design.png)
 
-The entry point for this application is a splash landing page that will provide basic content and collateral and allow the visitor to take 2 actions: `Create Profile` & `Login`
+The entry point for this application is a splash landing page that will provide basic content and collateral and allow the visitor to take 2 actions: `Sign Up` & `Login`
+
+Splash page uses `Bootswatch theme: Cyborg` `React-TypedJS` and `Plx-React` for the animation effects.
 
 ### There will be 2 types of profiles: `Personal` & `Enterprise`
-  Both profile types will allow the user to enter basic informatio(name, address, email).
+  Both profile types will allow the user to enter basic information(name, address, email).
   
   The Enterprise profile type upon logging in will see a `Create Offsite Event` application that allows the user to pick a date,        start & end time, company name & location and preferred contact. 
   
