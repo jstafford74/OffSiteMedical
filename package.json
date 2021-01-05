@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@18f/us-federal-holidays": "^1.4.0",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "chai": "^4.2.0",
     "cookie-parser": "^1.4.4",
     "dotenv": "^8.2.0",
